@@ -1,5 +1,5 @@
 (defproject session "0.1.3"
-  
+
   :dependencies
   [
    ;; Platform
@@ -45,5 +45,5 @@
                                     :output-to "resources/public/cljs/bootstrap.js"  ; default: main.js in current directory
                                     :output-dir "resources/public/cljs"
                                     :optimizations :none}}]}
-
+  :jvm-opts ["-Xmx1g"]
   :main ^{:skip-aot true} session.main)
